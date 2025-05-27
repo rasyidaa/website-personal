@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>UMKM Desa Margaasih</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+    }
+
+    header {
+      background-color: #0096c7;
+      color: rgb(241, 246, 247);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo-kiri {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 120px;
+      height: auto;
+    }
+
+.marquee h1 {
+  font-family: Georgia, serif;
+  white-space: nowrap;
+}
+
+    nav {
+      background-color: #095996;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .beranda {
+      padding: 30px 40px;
+      max-width: 750px;
+      margin: 40px auto;
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+      font-weight: 400;
+      color: #333;
+
+      background: linear-gradient(135deg, #e0faf800, #ffffff);
+      border-left: 6px solid #0096c7;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+ .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px auto; /* ⬅️ Tambahkan jarak bawah 30px */
+}
+
+.product-images {
+  flex: 0 0 250px;
+}
+
+.product-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+    .slideshow-buttons {
+      margin-top: 10px;
+    }
+
+    .slideshow-buttons button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      background-color: #095996;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #000000b0;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    footer img.logo-kanan, footer img.logo-kiri {
+      width: 50px;
+      height: auto;
+      position: absolute;
+      bottom: 15px;
+    }
+
+    footer img.logo-kanan {
+      right: 20px;
+    }
+
+    footer img.logo-kiri {
+      left: 20px;
+    }
+
+    .button {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px 5px 0 0;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.button.wa {
+  background-color: #25D366;
+}
+
+.button.wa:hover {
+  background-color: #1ebe5d;
+}
+
+.button.tiktok {
+  background-color: #000000;
+}
+
+.button.tiktok:hover {
+  background-color: #111111;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Foto/images-removebg-preview.png" alt="Logo Kiri" class="logo-kiri">
+    <div class="marquee">
+  <h1>SELAMAT DATANG DI UMKM DESA MARGAASIH</h1>
+</div>
+    <p>Temukan berbagai produk lokal yang berkualitas dan kreatif</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="https://margaasih-cicalengka.desa.id/" target="_blank">🌐 Website Desa Margaasih</a>
+  </nav>
+
+  <section class="beranda" id="beranda">
+    <h3></h3>
+    <p>
+      UMKM Desa Margaasih merupakan wadah bagi warga desa untuk mengembangkan potensi ekonomi melalui usaha mikro, kecil, dan menengah. 
+      Website ini menjadi sarana promosi produk-produk lokal yang berkualitas dan mencerminkan budaya serta kreativitas masyarakat setempat.
+    </p>
+    <p>
+      Dengan semangat gotong royong, UMKM di desa ini terus tumbuh dan memberikan kontribusi nyata bagi kemajuan ekonomi desa.
+    </p>
+  </section>
+
+  <div class="product-card">
+  <div class="product-images">
+    <img class="slideshow" 
+         src="Foto/UMKM1.jpg" 
+         data-images='["Foto/UMKM1.jpg", "Foto/UMKM11.jpg"]'>
+    <div class="slideshow-buttons">
+      <button onclick="changeImage(this, -1)">Prev</button>
+      <button onclick="changeImage(this, 1)">Next</button>
+    </div>
+  </div>
+  <div class="product-desc">
+    <h3>Shakila Hijab</h3>
+    <p>Hijab syar'i dan stylish dari UMKM Margaasih, dibuat dengan bahan berkualitas tinggi dan sentuhan kreativitas lokal. Cocok untuk berbagai aktivitas harian maupun acara spesial. Nyaman dipakai seharian, tampil anggun setiap waktu.</p>
+    <div>
+      <a href="https://wa.me/6285724659450" target="_blank">📱 WhatsApp</a> |
+    </div>
+  </div>
+</div>
+
+
+    <!-- Produk 2 -->
+<div class="product-card">
+  <div class="product-images">
+    <img class="slideshow" 
+         src="Foto/UMKM2.jpg" 
+         data-images='["Foto/UMKM2.jpg", "Foto/UMKM22.jpg"]'>
+    <div class="slideshow-buttons">
+      <button onclick="changeImage(this, -1)">Prev</button>
+      <button onclick="changeImage(this, 1)">Next</button>
+    </div>
+  </div>
+  <div class="product-desc">
+    <h3>Azizah Interior</h3>
+    <p>Produk interior rumah dari warga Margaasih yang penuh cita rasa seni. Mulai dari hiasan dinding, rak kayu, hingga dekorasi handmade yang membuat suasana rumah Anda semakin hangat dan estetik. Dibuat dengan tangan-tangan terampil warga lokal.</p>
+    <div>
+      <a href="https://wa.me/6283862765705" target="_blank">📱 WhatsApp</a> |
+      <a href="https://www.instagram.com/azizah_design_interior?igsh=MWc3bGd2dDRtemY4cw==" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
+</div>
+
+<!-- Produk 3 -->
+<div class="product-card">
+  <div class="product-images">
+    <img class="slideshow" 
+         src="Foto/UMKM3.jpg" 
+         data-images='["Foto/UMKM3.jpg", "Foto/UMKM3.jpg"]'>
+    <div class="slideshow-buttons">
+      <button onclick="changeImage(this, -1)">Prev</button>
+      <button onclick="changeImage(this, 1)">Next</button>
+    </div>
+  </div>
+  <div class="product-desc">
+    <h3>Warung Nasi Bu Hj. Unyi</h3>
+    <p>Cita rasa khas rumahan yang menggugah selera! Warung Makan Bu Hj. Unyi menyajikan aneka masakan Sunda yang lezat, bersih, dan halal. Dari nasi liwet, pepes ikan, hingga sambal dadak – semua dibuat dengan resep turun-temurun dan bahan segar pilihan. Nikmati sensasi makan seperti di rumah sendiri, hanya di Bu Hj. Unyi!</p>
+    <div>
+      <a href="https://wa.me/6288801874532" target="_blank">📱 WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Produk 4 -->
+<div class="product-card">
+  <div class="product-images">
+    <img class="slideshow" 
+         src="Foto/UMKM4.jpg" 
+         data-images='["Foto/UMKM4.jpg", "Foto/UMKM44.jpg", "Foto/UMKM444.jpg"]'>
+    <div class="slideshow-buttons">
+      <button onclick="changeImage(this, -1)">Prev</button>
+      <button onclick="changeImage(this, 1)">Next</button>
+    </div>
+  </div>
+  <div class="product-desc">
+    <h3>Bubu Hijab</h3>
+    <p>Bubu Hijab menghadirkan koleksi hijab modis dan nyaman dipakai untuk segala aktivitas. Desain elegan, bahan adem, dan pilihan warna yang trendi membuatmu tampil percaya diri setiap hari. Cocok untuk remaja hingga ibu-ibu aktif yang ingin tetap tampil syar’i tanpa ribet. Temukan gaya hijab terbaikmu di Bubu Hijab!</p>
+    <div>
+      <a href="https://wa.me/628812041459" target="_blank">📱 WhatsApp</a> |
+      <a href="https://www.tiktok.com/@bubu_hijab?_t=ZS-8wcYXterpGa&_r=1" target="_blank">🎵 TikTok</a>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 UMKM Desa Margaasih. Semua Hak Dilindungi.</p>
+    <img src="Foto/KKN-removebg-preview.png" alt="Logo Kiri" class="logo-kiri">
+    <img src="Foto/opensid_logo.png" alt="Logo Kanan" class="logo-kanan">
+  </footer>
+
+  <script>
+    // Ganti background otomatis
+    const backgrounds = ["Foto/b1.jpg", "Foto/b2.jpg", "Foto/b3.jpg"];
+    let index = 0;
+    const body = document.body;
+
+    function gantiBackground() {
+      body.style.backgroundImage = `url('${backgrounds[index]}')`;
+      index = (index + 1) % backgrounds.length;
+    }
+
+    gantiBackground();
+    setInterval(gantiBackground, 3000);
+
+    // Slideshow untuk gambar produk
+    const slideshows = document.querySelectorAll('.slideshow');
+    const slideshowIndexes = new Array(slideshows.length).fill(0);
+
+    slideshows.forEach((img, idx) => {
+      const images = JSON.parse(img.getAttribute('data-images'));
+      setInterval(() => {
+        slideshowIndexes[idx] = (slideshowIndexes[idx] + 1) % images.length;
+        img.src = images[slideshowIndexes[idx]];
+      }, 2000);
+    });
+
+    function changeImage(button, direction) {
+      const container = button.closest('.product-images');
+      const img = container.querySelector('.slideshow');
+      const images = JSON.parse(img.getAttribute('data-images'));
+      const idx = Array.from(slideshows).indexOf(img);
+      slideshowIndexes[idx] = (slideshowIndexes[idx] + direction + images.length) % images.length;
+      img.src = images[slideshowIndexes[idx]];
+    }
+  </script>
+
+</body>
+</html>
